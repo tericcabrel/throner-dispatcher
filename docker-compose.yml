@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+    # App
+    concerto:
+        build:
+            context: .
+        restart: always
+        ports:
+            - "7077:7077"
+        # Change this if you want to use a location on the host, or it will use a Docker volume.
+        volumes:
+            - .:/app

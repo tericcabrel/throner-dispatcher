@@ -1,0 +1,7 @@
+{
+  "name": "TAKE_PICTURE",
+  "pid": "PM001",
+  "request_queue": "picture_capture_request",
+  "response_queue": "picture_capture_response",
+  "timeout": 0
+}
