@@ -10,8 +10,7 @@ const dispatcherConfig = getDispatcherConfig(process);
 const port = dispatcherConfig.socketPort;
 
 const server = http.createServer((req, res) => {
-   console.info(`${req.method} ${req.originalUrl}`);
-   return;
+  return;
 });
 
 initializeDispatcher(server, dispatcherConfig);

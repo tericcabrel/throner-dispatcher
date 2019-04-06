@@ -98,7 +98,6 @@ export const handleErrorOnSend = (logger, e, socket, config) => {
     ex = { errorType: 'Internal Server Error', errorData: e };
   }
   logger.error(e);
-
   socket.emit(
     config.socketResponseEvent,
     JSON.stringify({

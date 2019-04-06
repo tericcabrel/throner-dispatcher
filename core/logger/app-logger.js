@@ -40,7 +40,9 @@ class Logger {
   }
 
   error(message) {
-    this.logger.error(message.stack ? message.stack : message);
+    this.logger.error(
+      message.stack ? message.stack : typeof message === 'object' ? JSON.stringify(message) : message.toString()
+    );
   }
 
   info(message) {

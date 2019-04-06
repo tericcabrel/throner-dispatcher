@@ -67,7 +67,7 @@ export const queueListener = async (config, rabbitManager, db, logger) => {
 
           switch (processID) {
             case PM_MAPPINGS.TAKE_PICTURE:
-              // Nothing
+              await sendResponseToClient(responseParams);
               break;
             default:
               await sendResponseToClient(responseParams);

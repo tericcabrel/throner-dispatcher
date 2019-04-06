@@ -7,7 +7,6 @@ import StorageManager from '../core/storage/StorageManager';
 
 export const socketListener = async (config, rabbitManager, logger) => {
   const sockets = StorageManager.get();
-
   return {
     name: config.socketRequestEvent,
     validation: {
