@@ -7,8 +7,6 @@ import { initializeDispatcher } from './core/bootstrap';
 
 const dispatcherConfig = getDispatcherConfig(process);
 
-console.log(dispatcherConfig);
-
 const port = dispatcherConfig.socketPort;
 
 const server = http.createServer((req, res) => {
