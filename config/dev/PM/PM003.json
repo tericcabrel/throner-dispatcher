@@ -1,0 +1,7 @@
+{
+  "name": "CHECK_STATUS",
+  "pid": "PM003",
+  "request_queue": "check_status_request",
+  "response_queue": "check_status_response",
+  "timeout": 0
+}

@@ -2,11 +2,13 @@ import * as joi from 'joi';
 import * as _ from 'lodash';
 
 // requests
-import { TakePictureJSONSchema } from "./take_picture/schema";
+import { TakePictureJSONSchema } from './take-picture/schema';
+import { CheckStatusJSONSchema } from './check-status/schema';
 
 export const schemasBeforeDispatching = {
   // requests
   PM001: joi.object(TakePictureJSONSchema).required(),
+  PM003: joi.object(CheckStatusJSONSchema).required(),
 
   /* PM029: joi.object({
       DesignOptimizationRequest: DesignOptimizationReqJSONSchema,
