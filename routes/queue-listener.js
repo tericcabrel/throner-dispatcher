@@ -72,6 +72,9 @@ export const queueListener = async (config, rabbitManager, db, logger) => {
             case PM_MAPPINGS.CHECK_STATUS:
               await sendResponseToClient(responseParams);
               break;
+            case PM_MAPPINGS.SEND_COMMAND:
+              await sendResponseToClient(responseParams);
+              break;
             default:
               await sendResponseToClient(responseParams);
               break;

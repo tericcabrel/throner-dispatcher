@@ -1,0 +1,7 @@
+{
+  "name": "SEND_COMMAND",
+  "pid": "PM005",
+  "request_queue": "send_command_request",
+  "response_queue": "send_command_response",
+  "timeout": 0
+}
