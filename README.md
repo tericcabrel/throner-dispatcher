@@ -1,31 +1,27 @@
-# Concerto
+# Throner Dispatcher
 
-This is a micro service built with NodeJS ond Socket.IO 
-to manage communication between a client app and a queue manager like RabbitMQ
-on dispox project
+Dispatch request between throner-api, throner-iot and throner-web 
 
-+ socket.io
-+ joi
-+ mongodb
-+ winston
-+ amqplib
+### Description
+This project listen request coming from the client through web socket, identity the action to do and the service to call then do the request. It also listen request coming from the IOT app and send to the client.<br>
+**Example: Battery status, send command to the drone**
+ 
 
-## Installation
-
-Clone the repository and do theses steps
-
+### Installation
 ```
-git clone https://gitrepo.variancetechnologies.io/dillygence/concerto.git
-cp .env.exampl .env
+git clone https://github.com/tericcabrel/throner-dispatcher.git
+yarn install
+cp .env.example .env
 nano .env
-mkdir log 
-chmod 777 log
-npm install
 ```
 
-## Starting the server
-
+### Start the server
 ```
-npm start
+yarn start
 ```
 
+The server will run on port 5991. You can change this by editing `.env` file.
+
+### Project
+To view all the repositories involved on this project, follow the link below<br>
+[View Throner project](https://github.com/tericcabrel/throner)
